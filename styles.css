@@ -1,0 +1,40 @@
+/* Basic dark aesthetic style */
+:root{
+  --bg:#0d0d0d;
+  --card:#151515;
+  --muted:#bfbfbf;
+  --accent:#d9d9d9;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:var(--accent);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.6;
+}
+.container{max-width:1000px;margin:0 auto;padding:0 20px}
+.site-header{padding:36px 0;text-align:center}
+.site-title{margin:0;font-size:28px}
+.site-sub{margin:6px 0 0;color:var(--muted)}
+.site-nav{margin-top:16px}
+.site-nav a{color:var(--accent);text-decoration:none;margin:0 12px;font-weight:600}
+.hero{padding:60px 0;background:linear-gradient(180deg,#0f0f0f, #0d0d0d)}
+.hero-inner{display:flex;gap:30px;align-items:center;flex-wrap:wrap}
+.cover{width:260px;height:360px;object-fit:cover;border-radius:8px;box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+.hero-text{flex:1;min-width:240px}
+.novel-title{font-size:32px;margin:0 0 10px}
+.novel-desc{color:var(--muted);margin:0}
+.section{padding:48px 0}
+.card{background:var(--card);padding:24px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.5)}
+.card h2{margin-top:0}
+a{color:inherit}
+.site-footer{padding:30px 0;text-align:center;opacity:0.9}
+.teaser{font-size:14px;color:var(--muted);margin-top:8px}
+@media(max-width:700px){
+  .hero-inner{flex-direction:column;align-items:center}
+  .cover{width:200px;height:280px}
+  .novel-title{font-size:24px;text-align:center}
+}
